@@ -1,0 +1,88 @@
+/* Header */
+.header {
+  background-color: var(--primary-color); /* Cor de fundo do header */
+  padding: 1.5rem; /* Espaçamento interno */
+  position: sticky; /* Fixa o header no topo */
+  top: 0;
+  box-shadow: 10px 0px 10px var(--primary-color); /* Sombra do header */
+  z-index: 99; /* Sobreposição */
+
+  & section {
+    display: flex; /* Posiciona os itens horizontalmente */
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+/* Conteúdo do header */
+.header-inner-content {
+  max-width: 1300px; /* Largura máxima */
+  margin-inline: auto; /* Centraliza horizontalmente */
+  padding: 0.8rem;
+  width: 100%;
+  & a {
+    text-decoration: none;
+  }
+}
+
+/* Navegação */
+nav {
+  & ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  & li {
+    & a {
+      color: var(--text-color-secondary); /* Cor do texto dos links */
+      margin-right: 1.5rem; /* Espaçamento à direita entre links */
+      font-size: medium; /* Tamanho da fonte */
+    }
+    &:hover {
+      transform: translateY(-5px); /* Efeito vertical ao passar o mouse */
+      transition: all 0.2s ease-out;
+    }
+  }
+}
+
+/* Contêiner dos ícones do menu */
+.header-icon-container button {
+  color: var(--text-color-secondary);
+}
+
+/* Botão do menu (oculto por padrão) */
+.menu-button {
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    position: absolute; /* Navegação sobreposta no mobile */
+    background-color: var(--primary-color);
+    width: 100%;
+    top: 46px; /* Distância do topo */
+    display: none; /* Oculto por padrão */
+    & ul {
+      flex-direction: column;
+      & li {
+        text-align: center;
+        padding: 0.8rem;
+      }
+    }
+  }
+
+  /* Exibe a navegação ao ativar a classe */
+  nav.show-menu {
+    display: block;
+  }
+
+  .menu-button {
+    display: block; /* Exibe o botão do menu */
+  }
+}

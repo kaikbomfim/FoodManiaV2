@@ -1,0 +1,85 @@
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  color: #000000; /* Cor do texto */
+  padding: 2rem 1rem; /* Espaçamento interno */
+  gap: 2rem; /* Espaçamento entre itens */
+}
+
+/* Opções de download dentro do rodapé */
+.download-options {
+  & * {
+    margin: 1rem 0; /* Margens entre itens */
+  }
+  & p:first-child {
+    font-weight: bold; /* Texto em negrito */
+    color: var(--text-color-secondary); /* Cor do texto */
+  }
+  & div {
+    display: flex;
+    gap: 0.5rem; /* Espaçamento entre imagens */
+    & img {
+      width: 180px; /* Largura das imagens */
+      cursor: pointer; /* Cursor de ponteiro */
+    }
+  }
+}
+
+/* Estilo do logo no rodapé */
+.logo-footer {
+  text-align: center; /* Alinhamento centralizado */
+}
+
+/* Links no rodapé */
+.links-footer {
+  & h3 {
+    color: var(--text-color-secondary); /* Cor do título */
+    margin-bottom: 0.8rem; /* Margem inferior */
+  }
+  & ul {
+    list-style: none; /* Remove marcadores */
+    & li {
+      margin-bottom: 0.5rem; /* Margem inferior dos itens */
+      & a {
+        color: #000000; /* Cor dos links */
+        text-decoration: none; /* Remove sublinhado */
+      }
+    }
+  }
+}
+
+/* Estilo do texto de copyright */
+.copyright {
+  color: var(--text-color-secondary); /* Cor do texto */
+  padding: 1rem 0; /* Espaçamento interno */
+  text-align: center; /* Alinhamento centralizado */
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .footer-content {
+    display: inline; /* Exibe inline no mobile */
+    font-size: 0.8rem; /* Tamanho da fonte reduzido */
+    & section {
+      padding: 1rem; /* Espaçamento interno reduzido */
+    }
+  }
+
+  .download-options {
+    & div {
+      display: inline;
+      & img {
+        width: 120px; /* Largura reduzida das imagens */
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 0.8rem; /* Tamanho da fonte reduzido */
+  }
+}

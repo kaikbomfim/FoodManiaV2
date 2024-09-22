@@ -1,0 +1,21 @@
+/* Feedbacks */
+.feedbacks-inner-content {
+  max-width: 1280px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.feedbacks {
+  display: flex;
+  padding: 4rem 1rem; /* Espaçamento interno */
+}
+
+.feedbacks app-feedback {
+  margin-right: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .feedbacks {
+    flex-direction: column;
+  }
+}

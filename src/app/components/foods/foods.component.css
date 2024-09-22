@@ -1,0 +1,26 @@
+/* Container para os resultados de busca, centralizado e com espaçamento superior */
+.results-container {
+  text-align: center;
+  margin-top: 2rem;
+  > h2 {
+    margin-bottom: 1rem; /* Espaçamento inferior do título */
+  }
+}
+
+/* Layout da seção de resultados de alimentos em grid, centralizado com espaçamento entre itens */
+.food-results {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
+}
+
+@media (max-width: 800px) {
+  .results-container {
+    display: flex;
+    flex-direction: column; /* Layout vertical */
+    align-items: center;
+    justify-content: center;
+  }
+}

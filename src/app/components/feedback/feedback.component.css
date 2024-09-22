@@ -1,0 +1,42 @@
+/* Estilo individual de cada feedback */
+.feedback {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 30%; /* Largura básica */
+  text-align: center; /* Alinhamento centralizado */
+  box-shadow: 0 0 15px var(--primary-box-shadow); /* Sombra */
+  padding: 1rem; /* Espaçamento interno */
+  border-radius: 1rem; /* Bordas arredondadas */
+  cursor: default; /* Cursor padrão */
+  transition: all 0.2s ease-out; /* Transição suave */
+  &:hover {
+    transform: translateY(-5px); /* Efeito de elevação no hover */
+  }
+  & p {
+    margin: 5px 0; /* Margens superior e inferior */
+  }
+  & .feedback-quote {
+    font-weight: bold; /* Texto em negrito */
+    font-size: 5rem; /* Tamanho grande da fonte */
+    color: var(--primary-color); /* Cor do texto */
+    margin-top: 3rem; /* Margem superior */
+    line-height: 2rem; /* Altura da linha */
+  }
+  & .feedback-author {
+    font-weight: bold; /* Texto em negrito */
+  }
+  & .feedback-rate {
+    color: var(--primary-color); /* Cor das estrelas de avaliação */
+    font-size: 1.3rem; /* Tamanho da fonte */
+  }
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .feedback {
+    margin-bottom: 1.2rem;
+  }
+}

@@ -1,0 +1,18 @@
+<section>
+  <mat-card class="food-card">
+    <img
+      [src]="foodData.imagem"
+      alt="{{ foodData.descricao }}"
+      mat-card-image
+    />
+    <mat-card-content>
+      <p><strong>Descrição:</strong> {{ foodData.descricao }}</p>
+      <p><strong>Grupo:</strong> {{ foodData.categoriaAlimentos }}</p>
+      <p><strong>Calorias:</strong> {{ foodData.energiaKcal }}</p>
+      <p><strong>Proteína:</strong> {{ foodData.proteina }}</p>
+      <p><strong>Carboidrato:</strong> {{ foodData.carboidrato }}</p>
+      <p><strong>Lipídios:</strong> {{ foodData.descricao }}</p>
+      <p><strong>Colesterol:</strong> {{ foodData.colesterol }}</p>
+    </mat-card-content>
+  </mat-card>
+</section>

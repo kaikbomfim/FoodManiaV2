@@ -1,0 +1,32 @@
+<!-- Cabeçalho da página com navegação -->
+<header>
+  <mat-toolbar class="header">
+    <section class="header-inner-content">
+      <a routerLink="/">
+        <h1 class="logo">Food<span>Mania</span></h1>
+      </a>
+      <nav [class.show-menu]="isMenuOpen">
+        <ul>
+          <li>
+            <a mat-button routerLink="/" routerLinkActive="active">Início</a>
+          </li>
+          <li>
+            <a mat-button routerLink="/contact" routerLinkActive="active"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header-icon-container">
+        <button
+          mat-icon-button
+          aria-label="Menu"
+          class="menu-button"
+          (click)="toggleMenu()"
+        >
+          <mat-icon>{{ menuIcon }}</mat-icon>
+        </button>
+      </div>
+    </section>
+  </mat-toolbar>
+</header>

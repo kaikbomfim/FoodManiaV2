@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden; /* Remove rolagem horizontal */
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--background-color); /* Cor de fundo */
+}
+
+:root {
+  --background-color: #ebebeb; /* Cor do fundo */
+  --primary-color: #fc9403; /* Cor principal */
+  --primary-color-darker: #fc7b03; /* Cor principal mais escura */
+  --background-image: radial-gradient(#fff, #c7c7c7); /* Imagem de fundo */
+  --secondary-color: #fcad03; /* Cor secundária */
+  --text-color: #b3ff00; /* Cor do texto nos cards */
+  --text-color-secondary: #ffffff; /* Cor secundária do texto */
+  --primary-box-shadow: #afafaf; /* Cor da sombra dos feedbacks */
+}
+
+/* Logo */
+.logo {
+  color: var(--text-color); /* Cor primária do texto */
+  & span {
+    color: var(--text-color-secondary); /* Cor secundária do texto */
+  }
+  font-size: 2rem; /* Tamanho da fonte */
+}
+
+/* Main Content */
+.page-inner-content {
+  max-width: 1280px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.section-title {
+  text-align: center; /* Centraliza o texto */
+  margin-top: 4rem; /* Espaçamento superior */
+  font-size: 1.8rem; /* Tamanho da fonte */
+}
+
+.subtitle-underline {
+  width: 10rem; /* Largura da linha sublinhada */
+  height: 0.3rem; /* Altura da linha */
+  background-color: var(--primary-color); /* Cor da linha */
+  border-radius: 6rem; /* Borda arredondada */
+  margin: 8px auto 0 auto; /* Margens */
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .section-title {
+    font-size: 1rem; /* Tamanho da fonte no mobile */
+  }
+}

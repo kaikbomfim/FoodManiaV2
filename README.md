@@ -1,27 +1,51 @@
-# FoodManiaV2
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=50&duration=3000&pause=200&color=F7B062FF&center=true&vCenter=true&multiline=true&random=false&width=435&height=100&lines=FoodMania 2.0">
+</div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+<h2 align="center">Descubra o poder da nutrição com informações precisas e acessíveis, sempre ao seu alcance.</h2>
 
-## Development server
+# Visão Geral
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+FoodMania, em sua versão 2.0, é uma aplicação web que permite a consulta de informações nutricionais dos alimentos, com base na tabela [TACO](https://www.cfn.org.br/wp-content/uploads/2017/03/taco_4_edicao_ampliada_e_revisada.pdf) (Tabela Brasileira de Composição de Alimentos).
 
-## Code scaffolding
+Utilizando o framework Angular, aliado a tecnologias como HTML, CSS e TypeScript, o FoodMania proporciona aos seus usuários um design prático e responsivo, agregando conteúdos dinâmicos através de consultas a uma API fictícia para informações e imagens.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Deploy da Aplicação
 
-## Build
+Confira à FoodMania 2.0 acessando o link a seguir: [FoodManiaV2](https://kaikbomfim.github.io/FoodManiaV2/).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instruções de Uso
 
-## Running unit tests
+- Para utilizar a aplicação, faça a cópia do repositório para a sua máquina local. Em seu terminal, use o seguinte comando:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+git clone https://github.com/kaikbomfim/FoodManiaV2.git
+```
 
-## Running end-to-end tests
+- Em sua pasta de importação, abra o diretório do projeto: `cd ./FoodMania`.
+- Em seguida, instale todos as dependências listadas no arquivo **package.json**, usando o comando abaixo:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm install
+```
 
-## Further help
+- Por fim, execute o comando `npm start` e acesse `http://localhost:4200/` em seu navegador.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Tecnologias Utilizadas
+
+- **Front-end:** Angular, HTML5, CSS3 e TypeScript.
+- **APIs:** Json-server (utilizado para simular uma API com informações nutricionais de alimentos e feedbacks dos usuários).
+- **Ambiente de execução:** Node.js (utilizado durante o desenvolvimento para gerenciar dependências).
+- **Controle de versão:** Git e GitHub.
+- **Hospedagem:** GitHub Pages.
+
+## Possíveis Melhorias
+
+**Melhorias Técnicas**
+
+- Utilizar uma API real para resgatar as informações nutricionais e os feedbacks.
+
+**Expansões de Funcionalidades**
+
+- Implementar demais seções na aplicação, como: produtos e serviços, sobre, calculadora etc.
+- Expandir o modelo de negócio da FoodMania para incluir: livros e guias de receitas, suplementos, planos de assinatura com refeições e dietas personalizadas.

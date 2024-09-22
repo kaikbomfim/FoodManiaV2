@@ -1,0 +1,25 @@
+@use "@angular/material" as mat;
+@use "./app/themes/themesm3-theme.scss";
+
+@include mat.core();
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --background-color: #ebebeb; /* Cor do fundo */
+  --primary-color: #fc9403; /* Cor principal */
+  --primary-color-darker: #fc7b03; /* Cor principal mais escura */
+  --background-image: radial-gradient(#fff, #c7c7c7); /* Imagem de fundo */
+  --secondary-color: #fcad03; /* Cor secundária */
+  --text-color: #b3ff00; /* Cor do texto nos cards */
+  --text-color-secondary: #ffffff; /* Cor secundária do texto */
+  --primary-box-shadow: #afafaf; /* Cor da sombra dos feedbacks */
+}

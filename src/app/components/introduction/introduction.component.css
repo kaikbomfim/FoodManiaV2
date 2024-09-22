@@ -1,0 +1,72 @@
+/* Cor de fundo da introdução */
+.introduction {
+  background-image: var(--background-image);
+}
+
+.introduction-inner-content {
+  max-width: 1300px; /* Largura máxima */
+  margin-inline: auto; /* Centraliza horizontalmente */
+  padding: 0.8rem;
+  width: 100%;
+  & a {
+    text-decoration: none;
+  }
+}
+
+/* Estilo da parte inferior da introdução */
+.introduction-bottom-side {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding: 1rem;
+  > .introduction-bottom-side-left {
+    height: 100%;
+    flex-basis: 50%; /* Largura da coluna */
+    > h2 {
+      font-size: 3.2rem;
+      margin-bottom: 1.5rem;
+    }
+    > p {
+      line-height: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    > a {
+      background-color: var(--primary-color);
+      border: none;
+      border-radius: 6rem; /* Borda arredondada */
+      padding: 0.8rem 3.8rem;
+      color: var(--text-color-secondary);
+      font-weight: 500;
+      font-size: 1rem;
+      transition: all 0.2s ease-out;
+      &:hover {
+        background-color: var(--primary-color-darker);
+      }
+    }
+    & .taco-link {
+      text-decoration: underline; /* Sublinhado */
+      color: var(--primary-color); /* Cor do link */
+    }
+  }
+  > .introduction-bottom-side-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > img {
+      width: 105%; /* Largura da imagem */
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .introduction-bottom-side {
+    flex-direction: column; /* Layout vertical no mobile */
+    text-align: center; /* Centraliza o texto */
+    padding-top: 4rem; /* Espaçamento superior */
+    & img {
+      margin-top: 2rem; /* Espaçamento superior da imagem */
+      overflow-x: hidden; /* Oculta rolagem horizontal */
+    }
+  }
+}

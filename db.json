@@ -1,0 +1,90 @@
+{
+  "feedbacks": [
+    {
+      "id": 1,
+      "text": "Nunca pensei que ia entender tanto sobre nutrição. FoodMania tá de parabéns!",
+      "rating": 4,
+      "author": "David Santana"
+    },
+    {
+      "id": 2,
+      "text": "Achei tudo o que eu precisava pra minha dieta. O site é show de bola!",
+      "rating": 5,
+      "author": "Bruno Braga"
+    },
+    {
+      "id": 3,
+      "text": "Muito bom, encontrei várias dicas e receitas saudáveis. Recomendo demais!",
+      "rating": 5,
+      "author": "Sara Silva"
+    }
+  ],
+  "foods": [
+    {
+      "id": 1,
+      "categoriaAlimentos": "Frutas e derivados",
+      "energiaKcal": "62.53 Kcal | 261.63 kJ",
+      "proteina": "0.23g",
+      "carboidrato": "16.59g",
+      "lipidios": "0.25g",
+      "colesterol": "N/A",
+      "descricao": "Maçã, Argentina, com casca, crua",
+      "imagem": "../../../assets/maca-argentina.jpg"
+    },
+    {
+      "id": 2,
+      "categoriaAlimentos": "Frutas e derivados",
+      "energiaKcal": "98.25 Kcal | 411.08 kJ",
+      "proteina": "1.27g",
+      "carboidrato": "25.96g",
+      "lipidios": "0.07g",
+      "colesterol": "N/A",
+      "descricao": "Banana, prata, crua",
+      "imagem": "../../../assets/banana-prata.jpg"
+    },
+    {
+      "id": 3,
+      "categoriaAlimentos": "Frutas e derivados",
+      "energiaKcal": "48.32 Kcal | 202.18 kJ",
+      "proteina": "0.86g",
+      "carboidrato": "12.33g",
+      "lipidios": "0.12g",
+      "colesterol": "N/A",
+      "descricao": "Abacaxi, cru",
+      "imagem": "../../../assets/abacaxi.jpg"
+    },
+    {
+      "id": 4,
+      "categoriaAlimentos": "Frutas e derivados",
+      "energiaKcal": "32.61 Kcal | 136.43 kJ",
+      "proteina": "0.88g",
+      "carboidrato": "8.14g",
+      "lipidios": "N/A",
+      "colesterol": "N/A",
+      "descricao": "Melancia, crua",
+      "imagem": "../../../assets/melancia.jpg"
+    },
+    {
+      "id": 5,
+      "categoriaAlimentos": "Frutas e derivados",
+      "energiaKcal": "40.16 Kcal | 168.02 kJ",
+      "proteina": "0.46g",
+      "carboidrato": "10.44g",
+      "lipidios": "0.12g",
+      "colesterol": "N/A",
+      "descricao": "Mamão, Papaia, cru",
+      "imagem": "../../../assets/mamao-papaia.jpg"
+    },
+    {
+      "id": 6,
+      "categoriaAlimentos": "Frutas e derivados",
+      "energiaKcal": "50.69 Kcal | 212.10 kJ",
+      "proteina": "0.86g",
+      "carboidrato": "12.77g",
+      "lipidios": "0.22g",
+      "colesterol": "N/A",
+      "descricao": "Manga, Tommy Atkins, crua",
+      "imagem": "../../../assets/manga-tommy.jpg"
+    }
+  ]
+}

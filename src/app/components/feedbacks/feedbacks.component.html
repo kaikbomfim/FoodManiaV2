@@ -1,0 +1,11 @@
+<!-- Feedbacks dos usuários serão renderizados aqui -->
+<section class="feedbacks-inner-content">
+  <h3 class="section-title">Feedbacks</h3>
+  <div class="subtitle-underline"></div>
+  <section class="feedbacks">
+    <app-feedback
+      *ngFor="let feedback of feedbackList"
+      [feedbackData]="feedback"
+    ></app-feedback>
+  </section>
+</section>

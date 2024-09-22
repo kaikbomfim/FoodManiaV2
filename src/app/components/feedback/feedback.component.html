@@ -1,0 +1,12 @@
+<section>
+  <mat-card class="feedback">
+    <mat-card-content>
+      <p class="feedback-quote">"</p>
+      <p class="feedback-text">{{ feedbackData.text }}</p>
+    </mat-card-content>
+    <mat-card-footer>
+      <p class="feedback-rate">{{ "&#9733;".repeat(feedbackData.rating) }}</p>
+      <p class="feedback-author">{{ feedbackData.author }}</p>
+    </mat-card-footer>
+  </mat-card>
+</section>
