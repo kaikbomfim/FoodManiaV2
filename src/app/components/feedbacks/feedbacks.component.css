@@ -13,9 +13,20 @@
   margin-right: 2rem;
 }
 
+.section-title {
+  text-align: center; /* Centraliza o texto */
+  margin-top: 4rem; /* Espaçamento superior */
+  font-size: 1.8rem; /* Tamanho da fonte */
+  font-weight: bold;
+}
+
 /* Media Queries */
 @media (max-width: 800px) {
   .feedbacks {
     flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 1rem; /* Tamanho da fonte no mobile */
   }
 }

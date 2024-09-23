@@ -1,172 +1,174 @@
-<h2 class="contact-title">Entre em contato</h2>
 <section class="contact-container">
-  <form
-    class="contact-form"
-    [formGroup]="formContact"
-    (ngSubmit)="enviarFormulario()"
-  >
-    <input
-      type="text"
-      placeholder="Digite o seu nome"
-      formControlName="nome"
-      [class.valid]="formContact.controls['nome'].valid"
-      [class.invalid]="
-        formContact.controls['nome'].invalid &&
-        (formContact.controls['nome'].touched ||
-          formContact.controls['nome'].dirty)
-      "
-    />
-    <div
-      *ngIf="
-        formContact.controls['nome'].invalid &&
-        (formContact.controls['nome'].touched ||
-          formContact.controls['nome'].dirty)
-      "
+  <div>
+    <h2 class="contact-title">Entre em contato</h2>
+    <form
+      class="contact-form"
+      [formGroup]="formContact"
+      (ngSubmit)="enviarFormulario()"
     >
-      <small
-        class="error-message"
-        *ngIf="formContact.controls['nome'].hasError('minlength')"
+      <input
+        type="text"
+        placeholder="Digite o seu nome"
+        formControlName="nome"
+        [class.valid]="formContact.controls['nome'].valid"
+        [class.invalid]="
+          formContact.controls['nome'].invalid &&
+          (formContact.controls['nome'].touched ||
+            formContact.controls['nome'].dirty)
+        "
+      />
+      <div
+        *ngIf="
+          formContact.controls['nome'].invalid &&
+          (formContact.controls['nome'].touched ||
+            formContact.controls['nome'].dirty)
+        "
       >
-        Esse campo precisa de no mínimo 4 caracteres.
-      </small>
-      <small
-        class="error-message"
-        *ngIf="formContact.controls['nome'].hasError('required')"
+        <small
+          class="error-message"
+          *ngIf="formContact.controls['nome'].hasError('minlength')"
+        >
+          Esse campo precisa de no mínimo 4 caracteres.
+        </small>
+        <small
+          class="error-message"
+          *ngIf="formContact.controls['nome'].hasError('required')"
+        >
+          Esse campo precisa ser preenchido.
+        </small>
+      </div>
+      <input
+        type="text"
+        placeholder="Digite o assunto"
+        formControlName="assunto"
+        [class.valid]="formContact.controls['assunto'].valid"
+        [class.invalid]="
+          formContact.controls['assunto'].invalid &&
+          (formContact.controls['assunto'].touched ||
+            formContact.controls['assunto'].dirty)
+        "
+      />
+      <div
+        *ngIf="
+          formContact.controls['assunto'].invalid &&
+          (formContact.controls['assunto'].touched ||
+            formContact.controls['assunto'].dirty)
+        "
       >
-        Esse campo precisa ser preenchido.
-      </small>
-    </div>
-    <input
-      type="text"
-      placeholder="Digite o assunto"
-      formControlName="assunto"
-      [class.valid]="formContact.controls['assunto'].valid"
-      [class.invalid]="
-        formContact.controls['assunto'].invalid &&
-        (formContact.controls['assunto'].touched ||
-          formContact.controls['assunto'].dirty)
-      "
-    />
-    <div
-      *ngIf="
-        formContact.controls['assunto'].invalid &&
-        (formContact.controls['assunto'].touched ||
-          formContact.controls['assunto'].dirty)
-      "
-    >
-      <small
-        class="error-message"
-        *ngIf="formContact.controls['assunto'].hasError('minlength')"
+        <small
+          class="error-message"
+          *ngIf="formContact.controls['assunto'].hasError('minlength')"
+        >
+          Esse campo precisa de no mínimo 10 caracteres.
+        </small>
+        <small
+          class="error-message"
+          *ngIf="formContact.controls['assunto'].hasError('required')"
+        >
+          Esse campo precisa ser preenchido.
+        </small>
+      </div>
+      <input
+        type="tel"
+        placeholder="(00) 0 0000-0000"
+        mask="(00) 0 0000-0000"
+        formControlName="telefone"
+        [class.valid]="formContact.controls['telefone'].valid"
+        [class.invalid]="
+          formContact.controls['telefone'].invalid &&
+          (formContact.controls['telefone'].touched ||
+            formContact.controls['telefone'].dirty)
+        "
+      />
+      <div
+        *ngIf="
+          formContact.controls['telefone'].invalid &&
+          (formContact.controls['telefone'].touched ||
+            formContact.controls['telefone'].dirty)
+        "
       >
-        Esse campo precisa de no mínimo 10 caracteres.
-      </small>
-      <small
-        class="error-message"
-        *ngIf="formContact.controls['assunto'].hasError('required')"
+        <small
+          class="error-message"
+          *ngIf="formContact.controls['telefone'].hasError('minlength')"
+        >
+          Esse campo precisa de no mínimo 11 caracteres.
+        </small>
+        <small
+          class="error-message"
+          *ngIf="formContact.controls['telefone'].hasError('required')"
+        >
+          Esse campo precisa ser preenchido.
+        </small>
+      </div>
+      <input
+        type="email"
+        placeholder="Digite o seu e-mail"
+        formControlName="email"
+        [class.valid]="formContact.controls['email'].valid"
+        [class.invalid]="
+          formContact.controls['email'].invalid &&
+          (formContact.controls['email'].touched ||
+            formContact.controls['email'].dirty)
+        "
+      />
+      <div
+        *ngIf="
+          formContact.controls['email'].invalid &&
+          (formContact.controls['email'].touched ||
+            formContact.controls['email'].dirty)
+        "
       >
-        Esse campo precisa ser preenchido.
-      </small>
-    </div>
-    <input
-      type="tel"
-      placeholder="(00) 0 0000-0000"
-      mask="(00) 0 0000-0000"
-      formControlName="telefone"
-      [class.valid]="formContact.controls['telefone'].valid"
-      [class.invalid]="
-        formContact.controls['telefone'].invalid &&
-        (formContact.controls['telefone'].touched ||
-          formContact.controls['telefone'].dirty)
-      "
-    />
-    <div
-      *ngIf="
-        formContact.controls['telefone'].invalid &&
-        (formContact.controls['telefone'].touched ||
-          formContact.controls['telefone'].dirty)
-      "
-    >
-      <small
-        class="error-message"
-        *ngIf="formContact.controls['telefone'].hasError('minlength')"
+        <small
+          class="error-message"
+          *ngIf="formContact.controls['email'].hasError('email')"
+        >
+          Esse campo precisa de um e-mail válido.
+        </small>
+        <small
+          class="error-message"
+          *ngIf="formContact.controls['email'].hasError('required')"
+        >
+          Esse campo precisa ser preenchido.
+        </small>
+      </div>
+      <textarea
+        maxlength="300"
+        placeholder="Digite a sua mensagem..."
+        rows="4"
+        formControlName="mensagem"
+        [class.valid]="formContact.controls['mensagem'].valid"
+        [class.invalid]="
+          formContact.controls['mensagem'].invalid &&
+          (formContact.controls['mensagem'].touched ||
+            formContact.controls['mensagem'].dirty)
+        "
       >
-        Esse campo precisa de no mínimo 11 caracteres.
-      </small>
-      <small
-        class="error-message"
-        *ngIf="formContact.controls['telefone'].hasError('required')"
+      </textarea>
+      <div
+        *ngIf="
+          formContact.controls['mensagem'].invalid &&
+          (formContact.controls['mensagem'].touched ||
+            formContact.controls['mensagem'].dirty)
+        "
       >
-        Esse campo precisa ser preenchido.
-      </small>
-    </div>
-    <input
-      type="email"
-      placeholder="Digite o seu e-mail"
-      formControlName="email"
-      [class.valid]="formContact.controls['email'].valid"
-      [class.invalid]="
-        formContact.controls['email'].invalid &&
-        (formContact.controls['email'].touched ||
-          formContact.controls['email'].dirty)
-      "
-    />
-    <div
-      *ngIf="
-        formContact.controls['email'].invalid &&
-        (formContact.controls['email'].touched ||
-          formContact.controls['email'].dirty)
-      "
-    >
-      <small
-        class="error-message"
-        *ngIf="formContact.controls['email'].hasError('email')"
-      >
-        Esse campo precisa de um e-mail válido.
-      </small>
-      <small
-        class="error-message"
-        *ngIf="formContact.controls['email'].hasError('required')"
-      >
-        Esse campo precisa ser preenchido.
-      </small>
-    </div>
-    <textarea
-      maxlength="300"
-      placeholder="Digite a sua mensagem..."
-      rows="4"
-      formControlName="mensagem"
-      [class.valid]="formContact.controls['mensagem'].valid"
-      [class.invalid]="
-        formContact.controls['mensagem'].invalid &&
-        (formContact.controls['mensagem'].touched ||
-          formContact.controls['mensagem'].dirty)
-      "
-    >
-    </textarea>
-    <div
-      *ngIf="
-        formContact.controls['mensagem'].invalid &&
-        (formContact.controls['mensagem'].touched ||
-          formContact.controls['mensagem'].dirty)
-      "
-    >
-      <small
-        class="error-message"
-        *ngIf="formContact.controls['mensagem'].hasError('minlength')"
-      >
-        Esse campo precisa de no mínimo 20 caracteres.
-      </small>
-      <small
-        class="error-message"
-        *ngIf="formContact.controls['mensagem'].hasError('required')"
-      >
-        Esse campo precisa ser preenchido.
-      </small>
-    </div>
-    <button mat-button type="submit" [disabled]="formContact.invalid">
-      Enviar
-    </button>
-  </form>
+        <small
+          class="error-message"
+          *ngIf="formContact.controls['mensagem'].hasError('minlength')"
+        >
+          Esse campo precisa de no mínimo 20 caracteres.
+        </small>
+        <small
+          class="error-message"
+          *ngIf="formContact.controls['mensagem'].hasError('required')"
+        >
+          Esse campo precisa ser preenchido.
+        </small>
+      </div>
+      <button mat-button type="submit" [disabled]="formContact.invalid">
+        Enviar
+      </button>
+    </form>
+  </div>
   <address>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15423.163538389701!2d-40.8068821!3d-14.8929671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7463b11e5a16f73%3A0x656a6e73de91d366!2sUESB%20%E2%80%93%20Universidade%20Estadual%20do%20Sudoeste%20da%20Bahia!5e0!3m2!1spt-BR!2sbr!4v1727045124436!5m2!1spt-BR!2sbr"

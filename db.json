@@ -42,17 +42,7 @@
       "descricao": "Banana, prata, crua",
       "imagem": "../../../assets/banana-prata.jpg"
     },
-    {
-      "id": 3,
-      "categoriaAlimentos": "Frutas e derivados",
-      "energiaKcal": "48.32 Kcal | 202.18 kJ",
-      "proteina": "0.86g",
-      "carboidrato": "12.33g",
-      "lipidios": "0.12g",
-      "colesterol": "N/A",
-      "descricao": "Abacaxi, cru",
-      "imagem": "../../../assets/abacaxi.jpg"
-    },
+
     {
       "id": 4,
       "categoriaAlimentos": "Frutas e derivados",

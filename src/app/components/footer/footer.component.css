@@ -33,6 +33,9 @@ footer {
 /* Estilo do logo no rodapé */
 .logo-footer {
   text-align: center; /* Alinhamento centralizado */
+  & .logo {
+    font-size: 2rem;
+  }
 }
 
 /* Links no rodapé */
@@ -40,6 +43,7 @@ footer {
   & h3 {
     color: var(--text-color-secondary); /* Cor do título */
     margin-bottom: 0.8rem; /* Margem inferior */
+    font-size: 1.2rem;
   }
   & ul {
     list-style: none; /* Remove marcadores */

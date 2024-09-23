@@ -11,7 +11,7 @@
   flex-direction: column;
   row-gap: 20px;
   margin-bottom: 50px;
-  min-width: 300px;
+  width: 600px;
 }
 
 .contact-form button {
@@ -34,6 +34,9 @@
   flex-flow: row wrap;
   column-gap: 20px;
   padding: 20px 0;
+  max-width: 1280px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  justify-content: space-evenly;
 }
 
 .contact-form button:disabled {
@@ -42,4 +45,35 @@
 
 .contact-form button:disabled:hover {
   filter: none;
+}
+
+form input,
+textarea {
+  border-radius: 2rem solid;
+  padding: 0.5rem;
+}
+
+.error-message {
+  margin-top: 0.2rem;
+  color: red;
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    width: 300px;
+  }
+
+  address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & iframe {
+      width: 300px;
+    }
+  }
 }
