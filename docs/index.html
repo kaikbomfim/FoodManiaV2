@@ -1520,6 +1520,9 @@
         justify-content: space-between;
         position: relative;
       }
+      .logo[_ngcontent-ng-c1391155745] {
+        font-size: 2rem;
+      }
       .header-inner-content[_ngcontent-ng-c1391155745] {
         max-width: 1300px;
         margin-inline: auto;
@@ -1614,9 +1617,13 @@
       .logo-footer[_ngcontent-ng-c993816584] {
         text-align: center;
       }
+      .logo-footer[_ngcontent-ng-c993816584] .logo[_ngcontent-ng-c993816584] {
+        font-size: 2rem;
+      }
       .links-footer[_ngcontent-ng-c993816584] h3[_ngcontent-ng-c993816584] {
         color: var(--text-color-secondary);
         margin-bottom: 0.8rem;
+        font-size: 1.2rem;
       }
       .links-footer[_ngcontent-ng-c993816584] ul[_ngcontent-ng-c993816584] {
         list-style: none;
@@ -2681,27 +2688,68 @@
       }
     </style>
     <style ng-app-id="ng">
-      .results-container[_ngcontent-ng-c3793461426] {
+      .results-container[_ngcontent-ng-c3268789615] {
         text-align: center;
         margin-top: 2rem;
       }
-      .results-container[_ngcontent-ng-c3793461426]
-        > h2[_ngcontent-ng-c3793461426] {
+      .results-container[_ngcontent-ng-c3268789615]
+        > h2[_ngcontent-ng-c3268789615] {
         margin-bottom: 1rem;
       }
-      .food-results[_ngcontent-ng-c3793461426] {
+      .food-results[_ngcontent-ng-c3268789615] {
         display: grid;
         gap: 1rem;
         margin-top: 2rem;
         justify-content: center;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       }
+      app-food[_ngcontent-ng-c3268789615] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 300px !important;
+        box-shadow: 0 0 15px var(--primary-box-shadow);
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+      }
+      app-food[_ngcontent-ng-c3268789615]:hover {
+        transform: translateY(-5px);
+      }
+      .page-inner-content[_ngcontent-ng-c3268789615] {
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+      .section-title[_ngcontent-ng-c3268789615] {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+      .section-subtitle[_ngcontent-ng-c3268789615] {
+        text-align: center;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+      .subtitle-underline[_ngcontent-ng-c3268789615] {
+        width: 10rem;
+        height: 0.3rem;
+        background-color: var(--primary-color);
+        border-radius: 6rem;
+        margin: 8px auto 0;
+      }
       @media (max-width: 800px) {
-        .results-container[_ngcontent-ng-c3793461426] {
+        .results-container[_ngcontent-ng-c3268789615] {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
+        }
+        .section-title[_ngcontent-ng-c3268789615],
+        .section-subtitle[_ngcontent-ng-c3268789615] {
+          font-size: 1rem;
         }
       }
     </style>
@@ -2718,9 +2766,18 @@
         app-feedback[_ngcontent-ng-c500015701] {
         margin-right: 2rem;
       }
+      .section-title[_ngcontent-ng-c500015701] {
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
       @media (max-width: 800px) {
         .feedbacks[_ngcontent-ng-c500015701] {
           flex-direction: column;
+        }
+        .section-title[_ngcontent-ng-c500015701] {
+          font-size: 1rem;
         }
       }
     </style>
@@ -2869,7 +2926,7 @@
                       >
                         <img
                           _ngcontent-ng-c4201967406
-                          src="../docs/assets/food.png"
+                          src="../docs/browser/assets/food.png"
                           alt="alimentos"
                         />
                       </aside>
@@ -2877,21 +2934,21 @@
                   </div></section></app-introduction
               ><app-foods
                 _ngcontent-ng-c1053449008
-                _nghost-ng-c3793461426
+                _nghost-ng-c3268789615
                 ngh="4"
-                ><section _ngcontent-ng-c3793461426 class="page-inner-content">
-                  <h3 _ngcontent-ng-c3793461426 class="section-title">
+                ><section _ngcontent-ng-c3268789615 class="page-inner-content">
+                  <h3 _ngcontent-ng-c3268789615 class="section-title">
                     Informações Nutricionais
                   </h3>
                   <div
-                    _ngcontent-ng-c3793461426
+                    _ngcontent-ng-c3268789615
                     class="subtitle-underline"
                   ></div>
-                  <div _ngcontent-ng-c3793461426 class="results-container">
-                    <h2 _ngcontent-ng-c3793461426>
+                  <div _ngcontent-ng-c3268789615 class="results-container">
+                    <h2 _ngcontent-ng-c3268789615 class="section-subtitle">
                       Resultados (por 100 gramas)
                     </h2>
-                    <section _ngcontent-ng-c3793461426 class="food-results">
+                    <section _ngcontent-ng-c3268789615 class="food-results">
                       <!---->
                     </section>
                   </div>
@@ -2936,12 +2993,12 @@
                     <a _ngcontent-ng-c993816584 href="#"
                       ><img
                         _ngcontent-ng-c993816584
-                        src="../docs/assets/play-store.png"
+                        src="../docs/browser/assets/play-store.png"
                         alt="Google Play" /></a
                     ><a _ngcontent-ng-c993816584 href="#"
                       ><img
                         _ngcontent-ng-c993816584
-                        src="../docs/assets/app-store.png"
+                        src="../docs/browser/assets/app-store.png"
                         alt="Apple Store"
                     /></a>
                   </div>
@@ -2991,7 +3048,7 @@
     >
     <link rel="modulepreload" href="chunk-WM62NQAS.js" />
     <script src="polyfills-FFHMD2TL.js" type="module"></script>
-    <script src="main-32JFJYAJ.js" type="module"></script>
+    <script src="main-XGRAXXZ3.js" type="module"></script>
 
     <script id="ng-state" type="application/json">
       {
